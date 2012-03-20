@@ -33,6 +33,10 @@
 
         function addItem(src, imageID) {
             var newHTML = $('<li><img src="' + src + '" alt="beach" /><a href="#" class="remove">remove</a><input type="hidden" value="' + imageID + '" /></li>');
+            /*
+            Need to do something to make the below one line code to work to add a new item in to the list rather than going for a long method as done there after.
+            $('#contentSlider').contentSlider('append', newHTML);
+            */
             newHTML.hide();
             $('#contentSlider li:last').before(newHTML);
             $('#contentSlider').contentSlider('refresh');

@@ -27,7 +27,7 @@
             var target = $(this).data('target');
             settings = target.data('settings'); // Wuhooooooo!!
 
-            
+
             var newLeft = 0;
             var slideAmt = settings.slideAmount;
             var index = settings.index;
@@ -47,7 +47,7 @@
             var target = $(this).data('target');
             settings = target.data('settings');
 
-            
+
             var newLeft = 0;
             var slideAmt = settings.slideAmount;
 
@@ -161,6 +161,16 @@
                 methods.refresh.apply(target, arguments);
             });
 
+        },
+        append: function (item) {
+            // This method is under development. :(
+            item = $(item);
+            item.hide();
+            var target = $(this);
+            target.append(item);
+            this.refresh();
+            this.slideBy(1);
+            item.fadeIn();
         }
     };
 
