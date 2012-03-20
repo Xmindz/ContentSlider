@@ -1,0 +1,110 @@
+#contentSlider
+    {
+        width:460px;
+        position:relative;
+        float:left;
+        overflow:hidden;
+        padding-top:7px;
+        height:58px;
+        
+    }
+   #contentSlider ul
+    {
+        position:absolute;
+        margin:0;
+        padding:0;
+    }
+    
+    #contentSlider ul li
+    {
+        width:58px;
+        float:left;
+        list-style:none;
+        height:58px;
+        position:relative;
+    }
+    #contentSlider li a
+    {
+        position:absolute;
+        height:20px;
+        width:20px;
+        right:0;
+        top:0;
+    }
+     #contentSlider li img
+    {
+        background:#fcefce;
+        padding:4px;
+    }
+     #contentSlider li.hover img
+    {
+         background:#fec52d;
+    }
+    #contentSlider li.addNew
+    {
+        z-index:900;
+    }
+    #contentSlider li.addNew a
+    {
+        display:block;
+        color:Red;
+        text-align:center;
+    }
+    .clear
+    {
+        clear:both;
+    }
+    .slider-outer
+    {
+        background:#fcefce;
+        height:75px;
+        padding:0 7px;
+        width:542px;
+    }
+    .left-nav, .right-nav
+    {
+        float:left;
+        height:75px;
+        width:36px;
+    }
+     .left-nav
+     {
+       margin-right:4px;  
+     }
+     .right-nav
+     {
+       margin-left:4px;  
+     }
+    .left-nav a, .right-nav a
+    {
+        display:block;
+        text-indent:-99999px;
+        height:35px;
+        margin-top:20px;
+        outline:none;
+        width:35px;
+    }
+    .left-nav a
+    {
+        background:url(../images/left-nav01.gif) no-repeat 0 -36px;
+    }
+    .left-nav a.disabled, .left-nav a.disabled:hover
+    {
+        background:url(../images/left-nav01.gif) no-repeat 0 -72px;
+    }
+    .left-nav a:hover
+    {
+        background:url(../images/left-nav01.gif) no-repeat 0 0;
+    }
+    .right-nav a
+    {
+        background:url(../images/right-nav01.gif) no-repeat 0 -36px;
+    }
+    .right-nav a:hover
+    {
+        background:url(../images/right-nav01.gif) no-repeat 0 0;
+    }
+    .right-nav a.disabled, .right-nav a.disabled:hover
+    {
+        background:url(../images/right-nav01.gif) no-repeat 0 -72px;
+    }
